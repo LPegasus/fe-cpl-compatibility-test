@@ -1,0 +1,37 @@
+{
+  "name": "fe-cpl-compatibility-test",
+  "version": "1.0.0",
+  "description": "browser compatibility test",
+  "scripts": {
+    "webpack": "rm -rf ./dist&&webpack --watch",
+    "karma": "karma start karma.config.js",
+    "chrome": "karma start karma.config.js --browsers Chrome",
+    "safari": "karma start karma.config.js --browsers Safari",
+    "start": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-safari-launcher": "^1.0.0",
+    "mocha": "^4.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "source-map-loader": "^0.2.3"
+  }
+}
